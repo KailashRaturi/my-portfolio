@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/KailashRaturi/my-portfolio/static/css/main.abddb1c6.css",
+    "main.js": "/KailashRaturi/my-portfolio/static/js/main.b46e47ec.js",
+    "static/js/453.acca0757.chunk.js": "/KailashRaturi/my-portfolio/static/js/453.acca0757.chunk.js",
+    "index.html": "/KailashRaturi/my-portfolio/index.html",
+    "main.abddb1c6.css.map": "/KailashRaturi/my-portfolio/static/css/main.abddb1c6.css.map",
+    "main.b46e47ec.js.map": "/KailashRaturi/my-portfolio/static/js/main.b46e47ec.js.map",
+    "453.acca0757.chunk.js.map": "/KailashRaturi/my-portfolio/static/js/453.acca0757.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.abddb1c6.css",
+    "static/js/main.b46e47ec.js"
+  ]
+}

@@ -1,0 +1,191 @@
+html,body {
+     scroll-behavior: smooth;
+     margin: 0;
+     padding: 0;
+     width: 100%;
+       
+  }
+  .Content {
+    width: 100%;
+    overflow-x: hidden;  /* Ensure content doesn't overflow horizontally */
+  }
+#root{
+background-color: rgb(223, 242, 255);
+}
+#about{
+    width:100%;
+    font-size: 22px;
+    height:70vh;
+    display:grid;
+    place-items:center;
+    text-align:center;
+    color:rgb(255, 255, 255);
+    background-image: linear-gradient(rgb(0,0,0,0.3),rgb(0,0,0,0.3));
+    background-image:url("https://weblium.com/blog/wp-content/uploads/2021/05/19-Best-About-Me-Page-Examples-and-How-to-Write-a-Killer-About-Me-Page-1-1-1.png");
+    background-repeat: no-repeat;
+    background-size:  100% auto;
+    background-attachment: sticky;
+    text-shadow: 2px 2px 2px black;
+}
+
+@media (max-width: 773px) {
+    #about {
+      width: auto;
+      height: 500px; 
+      background-size:  100% 150%;
+      font-size: 18px;
+    }
+  }
+  #check{
+    height:250px;
+    width: 250px;
+    box-shadow: 5px 5px 5px 1px black;
+  }
+
+  .home{
+    background-color: rgba(100, 97, 97, 0.213) !important; 
+  }
+
+ .navbarNav
+ {
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+    background-clip: text;  
+    font-size: 15px;
+  }
+  .navbar-nav .nav-link {
+    background: linear-gradient(to right, rgb(39, 38, 38));
+    background-clip: text;
+    color: rgba(53, 53, 53, 0.571);
+  }
+
+  /* Contact Section */
+.contact-section {
+    background: #f8f9fa; 
+  }
+  
+  .contact-section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .contact-section p {
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  .contact-section .form-control {
+    border-radius: 5px;
+  }
+  
+  .contact-section .btn {
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .contact-section .btn:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .contact-section h2 {
+      font-size: 1.5rem;
+    }
+  
+    .contact-section p {
+      font-size: 0.9rem;
+    }
+  
+    .contact-section .form-control,
+    .contact-section .btn {
+      font-size: 0.9rem;
+    }
+  }
+  
+  
+.services-section {
+    background-color: #f9f9f9;
+  }
+  
+  .service-card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .service-icon {
+    font-size: 40px;
+    margin-bottom: 15px;
+  }
+  
+  .service-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 15px;
+  }
+  
+  .service-description {
+    font-size: 14px;
+    color: #666;
+  }
+  
+
+  @media (max-width: 768px) {
+    .service-icon {
+      font-size: 30px;
+    }
+    .service-title {
+      font-size: 18px;
+    }
+  }
+  
+  /* blog.css*/
+
+.blog-section {
+    background-color: #f4f4f4;
+  }
+  
+  .blog-card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .blog-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .blog-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 15px;
+  }
+  
+  .blog-summary {
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .blog-card .btn {
+    margin-top: 15px;
+  }
+  
+
+  @media (max-width: 768px) {
+    .blog-title {
+      font-size: 16px;
+    }
+  }
+
+  

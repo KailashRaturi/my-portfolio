@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import { Container, Row, Col, Form, Button } from 'react-bootstrap';
+import './index.css'; // You can add your custom styles here
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -17,50 +19,64 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Handle form submission (e.g., send to an API or email service)
-    console.log('Form submitted:', formData);
-    // Reset form fields
-    setFormData({ name: '', email: '', message: '' });
+    // Handle form submission logic here (e.g., sending an email, saving data, etc.)
+    console.log('Form Submitted:', formData);
   };
 
   return (
-    <section id="contact">
-      <h2>Contact Me</h2>
-      <form onSubmit={handleSubmit}>
-        <div>
-          <label htmlFor="name">Name:</label>
-          <input
-            type="text"
-            id="name"
-            name="name"
-            value={formData.name}
-            onChange={handleChange}
-            required
-          />
-        </div>
-        <div>
-          <label htmlFor="email">Email:</label>
-          <input
-            type="email"
-            id="email"
-            name="email"
-            value={formData.email}
-            onChange={handleChange}
-            required
-          />
-        </div>
-        <div>
-          <label htmlFor="message">Message:</label>
-          <textarea
-            id="message"
-            name="message"
-            value={formData.message}
-            onChange={handleChange}
-            required
-          ></textarea>
-        </div>
-        <button type="submit">Send Message</button>
-      </form>
+    <section id="contact" className="contact-section py-5">
+      <Container>
+        <Row>
+          <Col xs={12} md={6}>
+            <h2>Contact Me</h2>
+            <p>Feel free to reach out to me via the form below!</p>
+          </Col>
+          <Col xs={12} md={6}>
+            <Form onSubmit={handleSubmit}>
+              <Form.Group controlId="formName" className="mb-3">
+                <Form.Label>Name</Form.Label>
+                <Form.Control
+                  type="text"
+                  name="name"
+                  value={formData.name}
+                  onChange={handleChange}
+                  placeholder="Enter your name"
+                  required
+                />
+              </Form.Group>
+
+              <Form.Group controlId="formEmail" className="mb-3">
+                <Form.Label>Email address</Form.Label>
+                <Form.Control
+                  type="email"
+                  name="email"
+                  value={formData.email}
+                  onChange={handleChange}
+                  placeholder="Enter your email"
+                  required
+                />
+              </Form.Group>
+
+              <Form.Group controlId="formMessage" className="mb-3">
+                <Form.Label>Message</Form.Label>
+                <Form.Control
+                  as="textarea"
+                  rows={4}
+                  name="message"
+                  value={formData.message}
+                  onChange={handleChange}
+                  placeholder="Enter your message"
+                  required
+                />
+              </Form.Group>
+
+              <Button variant="primary" type="submit">
+                Send Message
+              </Button>
+            </Form>
+          </Col>
+        </Row>
+      </Container>
     </section>
   );
 };

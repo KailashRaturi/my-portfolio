@@ -4,10 +4,10 @@ import "./index.css";
 const NavBar = () => {
   return (
     <Navbar className='home' expand="lg" fixed="top">
-      <Navbar.Brand href="#home" >My Portfolio</Navbar.Brand>
+      <Navbar.Brand href="#home"  className='ms-2' >My Portfolio</Navbar.Brand>
       <Navbar.Toggle aria-controls="navbarNav" />
       <Navbar.Collapse id="navbarNav">
-        <Nav className="ms-auto" >
+        <Nav className="ms-auto navbar" >
           <Nav.Link href="#about">About</Nav.Link>
           <Nav.Link href="#projects">Projects</Nav.Link>
           <Nav.Link href="#blog">Blog</Nav.Link>

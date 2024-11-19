@@ -1,4 +1,3 @@
-// src/components/Service.js
 import React from 'react';
 import { Card, Col, Row } from 'react-bootstrap';  // Importing Bootstrap components
 import './index.css';  // Custom styles for the Service component
@@ -8,7 +7,7 @@ const Service = () => {
     {
       title: 'Web Development',
       description: 'Building responsive and high-performing websites with modern technologies.',
-      icon: '🌐', // You can use an emoji as an icon, or use an actual icon from a library like FontAwesome
+      icon: '🌐',
     },
     {
       title: 'UI/UX Design',

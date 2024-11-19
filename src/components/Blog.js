@@ -32,7 +32,7 @@ const Blog = () => {
         <h2 className="text-center mb-5">Blog</h2>
         <Row>
           {blogPosts.map((post, index) => (
-            <Col md={6} lg={3} key={index} className="mb-4" data-aos="zoom-out">
+            <Col md={15} lg={3} sm={12} key={index} className=" Blog mb-4" data-aos="zoom-out">
               <Card className="blog-card">
                 <Card.Body>
                   <Card.Title className="blog-title">{post.title}</Card.Title>

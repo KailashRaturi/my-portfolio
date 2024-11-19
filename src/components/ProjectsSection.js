@@ -27,7 +27,7 @@ const ProjectsSection = () => {
   return (
     <section id="projects" className="py-5">
       <Container>
-        <h2 className="text-center mb-5">My Projects</h2>
+        <h2 className="text-center mb-4 mt-4">My Projects</h2>
         <Row className="g-5">
           {projects.map((project, index) => (
             <Col key={index} md={4} sm={12} data-aos="fade-up" data-aos-delay={`${index * 100}`}>

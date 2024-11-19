@@ -7,10 +7,14 @@ html,body {
   }
   .Content {
     width: 100%;
-    overflow-x: hidden;  /* Ensure content doesn't overflow horizontally */
+    overflow-x: hidden;  
   }
 #root{
 background-color: rgb(223, 242, 255);
+}
+.project{
+  margin-top: 5px;
+
 }
 #about{
     width:100%;
@@ -28,12 +32,61 @@ background-color: rgb(223, 242, 255);
     text-shadow: 2px 2px 2px black;
 }
 
-@media (max-width: 773px) {
+@media (max-width: 1380px) {
+    #about {
+      width: auto;
+      height: 300px; 
+      background-size:  100% 100%;
+      font-size: 25px;
+      
+    }
+  }
+  @media (max-width: 1700px) {
     #about {
       width: auto;
       height: 500px; 
       background-size:  100% 150%;
+      font-size: 20px;
+      
+    }
+  }
+
+  @media (max-width: 1200px) {
+    #about {
+      width: auto;
+      height: 500px; 
+      background-size:  100% 100%;
+      font-size: 21px;
+      text-align:center;
+    }
+  }
+  @media (max-width: 800px) {
+    #about {
+      width: auto;
+      height: 600px; 
+      background-size:  100% 100%;
+      font-size: 21px;
+      text-align:center;
+    }
+    .about{
+      height: 180px; 
+      font-size: 20px;
+      text-align:center;
+
+    }
+  }
+  @media (max-width: 400px) {
+    #about {
+      width: auto;
+      height: 500px; 
+      background-size:  120% 100%;
+      text-align:center;
+    }
+    .about{
+      height: 190px; 
       font-size: 18px;
+      text-align:center;
+
     }
   }
   #check{
@@ -43,21 +96,36 @@ background-color: rgb(223, 242, 255);
   }
 
   .home{
-    background-color: rgba(100, 97, 97, 0.213) !important; 
+    background-color: rgba(74, 70, 70, 0.180) ;
   }
 
- .navbarNav
- {
-    background: linear-gradient(to right, #ff7e5f, #feb47b);
-    background-clip: text;  
-    font-size: 15px;
-  }
   .navbar-nav .nav-link {
     background: linear-gradient(to right, rgb(39, 38, 38));
     background-clip: text;
-    color: rgba(53, 53, 53, 0.571);
+    font-size: 17px;
+    color:  rgb(45, 45, 45);
+    transition: color 0.3s ease;
+    outline: none;
   }
 
+  .navbar-nav .nav-link:hover,
+  .navbar-nav .nav-link:focus{
+    color:  rgba(15, 16, 16, 0.151);
+    border-radius: 30px;
+   
+  }
+  .navbar-nav .nav-link.active,
+  .navbar-nav .nav-link:focus{
+    color: rgba(15, 16, 16, 0.1); 
+    background: rgba(15, 16, 16, 0.1);
+    border-radius: 30px;
+    padding:6px;
+  }
+
+  .navbar-nav .nav-link:focus{
+    color:  rgba(15, 16, 16, 0.1);
+    
+  }
   /* Contact Section */
 .contact-section {
     background: #f8f9fa; 

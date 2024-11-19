@@ -11,9 +11,9 @@ const AboutSection = () => {
 
   return (
     <section id="about" className="py-5 bg-light" data-aos="zoom-in">
-      <Container>
+      <Container >
         <Row>
-          <Col md={6}>
+          <Col className='about' md={6} >
             <animated.h2 style={props}>About Me</animated.h2>
             <animated.p style={props}>
               Hello! My Name is Kailash. I Have Done My Bca From Klsd Now I Am Pursuing My Mca 
